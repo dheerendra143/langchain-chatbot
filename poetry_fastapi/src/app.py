@@ -5,7 +5,6 @@ from starlette.middleware.cors import CORSMiddleware
 from .routes import mainRoutes
 app = FastAPI()
 
-
 app.add_middleware(
     CORSMiddleware,
 )
