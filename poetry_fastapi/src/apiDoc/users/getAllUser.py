@@ -5,6 +5,5 @@ swaggerUserConfigDict = {
     "summary": "Api to get all users",
     "description":"This api is a get api to fetch the all users",
     "name": "getAllUser",
-    "response_model": users.User
-
+    # "response_model": users.User
 }
