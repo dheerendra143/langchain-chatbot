@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from poetry_fastapi.src.apiDoc.users import getAllUser
+from poetry_fastapi.src.apidoc.users import getAllUser
 userRouter = APIRouter()
 
 
