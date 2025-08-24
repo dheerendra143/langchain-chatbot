@@ -2,7 +2,7 @@
 from fastapi import FastAPI, APIRouter
 from starlette.middleware.cors import CORSMiddleware
 
-from .routes import mainRoutes
+from .routes import main_routes
 app = FastAPI()
 
 app.add_middleware(
@@ -10,7 +10,7 @@ app.add_middleware(
 )
 
 app.include_router(
-    mainRoutes.mainRouter,
+    main_routes.routers,
     prefix="/api",
     # dependencies=[Depends(get_token_header)],
 )
