@@ -1,2 +1,12 @@
 /fastapienv/
 /dist/
+/.idea/misc.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/poetry-fastapi.iml
+/.idea/modules.xml
+/.langchainollamaenv/
+/__pycache__/
+/poetry-fastapi.egg-info/
+/venv/
+/llama_index_env/   
