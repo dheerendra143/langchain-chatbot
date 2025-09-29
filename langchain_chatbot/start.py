@@ -8,4 +8,4 @@ if query:
     # resource = chat.chain.invoke(query)
     # st.write(resource.content)
     resource = chat.llm.stream(query)
-    st.write(resource)
+    st.write_stream(resource)
