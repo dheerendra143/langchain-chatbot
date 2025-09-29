@@ -2,6 +2,7 @@ import streamlit as st
 from langchain_core.prompts import PromptTemplate
 
 import llm.config as chat
+import llm.codeAgentPrompt as code_promp
 
 
 st.title("Technical assistance")
@@ -14,12 +15,7 @@ query = st.text_input(
 
 prompt_template = PromptTemplate(
     input_variables=["code"],
-    template="""
-        You are the a Software architect and your role is to help your team with best technical solution
-        based on the given question and the question is : {code} you solution should include the code examples,
-        detailed explanation, possible reason and other helpfull details with 
-        recommended solution or approach.
-    """
+    template=code_promp.template
 )
 
 if query:
