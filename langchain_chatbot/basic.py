@@ -1,5 +1,5 @@
 import streamlit as st
-import llm.config as chat
+import llm.config.basic as chat
 
 
 st.title("Chat with Ollama")

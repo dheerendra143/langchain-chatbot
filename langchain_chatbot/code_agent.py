@@ -1,8 +1,8 @@
 import streamlit as st
-from langchain_core.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate, ChatPromptTemplate
 
-import llm.config as chat
-import llm.codeAgentPrompt as code_promp
+import llm.config.code_agent_config as chat
+import llm.propts.codeAgentPrompt as code_promp
 
 
 st.title("Technical assistance")
@@ -11,7 +11,6 @@ query = st.text_input(
     label="Enter your technical query",
     placeholder="Write your query here",
     )
-
 
 prompt_template = PromptTemplate(
     input_variables=["code"],
