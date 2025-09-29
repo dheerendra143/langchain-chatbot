@@ -24,3 +24,8 @@ Install the **`langchain_community`**:
 ```
 pip install langchain_community
 ```
+
+To run the application:
+```
+streamlit run langchain_chatbot/chatbot/start.py
+```
